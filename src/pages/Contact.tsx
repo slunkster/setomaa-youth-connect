@@ -69,8 +69,8 @@ const Contact = () => {
               key={w.name}
               className="rounded-3xl border border-border/60 bg-card p-6 text-center shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-pop)]"
             >
-              <div className="mx-auto grid h-24 w-24 place-items-center rounded-full bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-pop)]">
-                <User className="h-10 w-10" />
+              <div className="mx-auto grid h-40 w-40 place-items-center rounded-full bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-pop)] sm:h-48 sm:w-48">
+                <User className="h-20 w-20 sm:h-24 sm:w-24" />
               </div>
               <h3 className="mt-5 font-display text-lg font-bold">{w.name}</h3>
               <p className="text-sm font-semibold text-primary">{w.role}</p>
