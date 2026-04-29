@@ -31,20 +31,46 @@ const Contact = () => {
       <section className="container pb-16">
         <div className="mx-auto max-w-3xl rounded-3xl border border-border/60 bg-card p-6 shadow-[var(--shadow-soft)] md:p-10">
           <h2 className="font-display text-2xl font-bold">Üldine info</h2>
-          <ul className="mt-6 grid gap-4 text-sm sm:grid-cols-2">
-            <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-5 w-5 text-primary" />
-              <span>Setomaa vald, Eesti</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Mail className="mt-0.5 h-5 w-5 text-primary" />
-              <a href="mailto:info@setomaanoored.ee" className="hover:text-primary">info@setomaanoored.ee</a>
-            </li>
-            <li className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-5 w-5 text-primary" />
-              <a href="tel:+3720000000" className="hover:text-primary">+372 000 0000</a>
-            </li>
-          </ul>
+          <dl className="mt-6 grid gap-x-6 gap-y-4 text-sm sm:grid-cols-[max-content_1fr]">
+            <dt className="font-semibold text-muted-foreground">Õiguslik vorm</dt>
+            <dd>Kohaliku omavalitsuse asutus</dd>
+
+            <dt className="font-semibold text-muted-foreground">Registrikood</dt>
+            <dd>75032621</dd>
+
+            <dt className="font-semibold text-muted-foreground">KMKR nr</dt>
+            <dd>—</dd>
+
+            <dt className="font-semibold text-muted-foreground">Majandusaasta periood</dt>
+            <dd>01.01 – 31.12</dd>
+
+            <dt className="font-semibold text-muted-foreground">Asutatud</dt>
+            <dd>18.03.2005</dd>
+
+            <dt className="font-semibold text-muted-foreground">Endine ärinimi</dt>
+            <dd>Värska Avatud Noortekeskus</dd>
+
+            <dt className="font-semibold text-muted-foreground">Aadress</dt>
+            <dd className="flex items-start gap-2">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              <span>Pikk tn 30, Värska alevik, Setomaa vald, Võru maakond, 64001</span>
+            </dd>
+
+            <dt className="font-semibold text-muted-foreground">Staatus</dt>
+            <dd>Registreeritud</dd>
+
+            <dt className="font-semibold text-muted-foreground">E-post</dt>
+            <dd className="flex items-start gap-2">
+              <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              <a href="mailto:noorsootoo.keskus@setomaa.ee" className="break-all hover:text-primary">noorsootoo.keskus@setomaa.ee</a>
+            </dd>
+
+            <dt className="font-semibold text-muted-foreground">Telefon</dt>
+            <dd className="flex items-start gap-2">
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              <a href="tel:+3725171796" className="hover:text-primary">+372 5171796</a>
+            </dd>
+          </dl>
           <p className="mt-8 text-sm text-muted-foreground">
             Otsid kindlat keskust?{" "}
             <Link to="/keskused" className="font-semibold text-primary hover:underline">
