@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/", label: "Avaleht", end: true },
@@ -17,9 +18,13 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <nav className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-bold" onClick={() => setOpen(false)}>
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-pop)]">
-            <Sparkles className="h-5 w-5" />
-          </span>
+          <img
+            src={logo}
+            alt="Setomaa Noorsootöö Keskuse logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 object-contain"
+          />
           <span className="font-display text-lg leading-tight">
             Setomaa<br className="hidden sm:block" />
             <span className="text-sm font-semibold text-muted-foreground sm:ml-1">Noorsootöö Keskus</span>
