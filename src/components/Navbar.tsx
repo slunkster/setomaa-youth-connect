@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <nav className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-bold" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img
             src={logo}
             alt="Setomaa Noorsootöö Keskuse logo"
@@ -25,10 +25,14 @@ const Navbar = () => {
             height={44}
             className="h-11 w-11 object-contain"
           />
-          <span className="font-display text-lg leading-tight">
-            Setomaa<br className="hidden sm:block" />
-            <span className="text-sm font-semibold text-muted-foreground sm:ml-1">Noorsootöö Keskus</span>
-          </span>
+          <div className="flex flex-col leading-tight">
+            <span className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+              Setomaa
+            </span>
+            <span className="font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">
+              Noorsootöö Keskus
+            </span>
+          </div>
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
