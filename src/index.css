@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 40% 14%;
 
-    --primary: 6 86% 62%;
+    --primary: 357 87% 35%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 14 92% 70%;
+    --primary-glow: 357 87% 47%;
 
     --secondary: 188 78% 42%;
     --secondary-foreground: 0 0% 100%;
@@ -35,15 +35,15 @@ All colors MUST be HSL.
 
     --border: 220 18% 90%;
     --input: 220 18% 90%;
-    --ring: 6 86% 62%;
+    --ring: 357 87% 35%;
 
     --radius: 1rem;
 
-    --gradient-hero: linear-gradient(135deg, hsl(6 86% 62% / 0.12), hsl(188 78% 42% / 0.12) 50%, hsl(45 96% 60% / 0.18));
+    --gradient-hero: linear-gradient(135deg, hsl(357 87% 35% / 0.12), hsl(188 78% 42% / 0.12) 50%, hsl(45 96% 60% / 0.18));
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-cta: linear-gradient(120deg, hsl(6 86% 62%), hsl(14 92% 70%) 60%, hsl(45 96% 60%));
+    --gradient-cta: linear-gradient(120deg, hsl(357 87% 35%), hsl(357 87% 47%) 60%, hsl(45 96% 60%));
     --shadow-soft: 0 10px 30px -12px hsl(220 40% 14% / 0.12);
-    --shadow-pop: 0 18px 40px -16px hsl(6 86% 62% / 0.35);
+    --shadow-pop: 0 18px 40px -16px hsl(357 87% 35% / 0.35);
     --transition-base: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
