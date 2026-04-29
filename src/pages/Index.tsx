@@ -139,22 +139,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="container pb-20">
-        <div
-          className="overflow-hidden rounded-[2rem] p-10 text-center text-primary-foreground shadow-[var(--shadow-pop)] md:p-16"
-          style={{ background: "var(--gradient-cta)" }}
-        >
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">Liitu meiega!</h2>
-          <p className="mx-auto mt-4 max-w-xl text-base opacity-95 sm:text-lg">
-            Iga noor on oodatud. Tule külla, küsi küsimusi või tule lihtsalt aega
-            veetma — me ootame sind!
-          </p>
-          <Button asChild size="lg" variant="secondary" className="mt-7 rounded-full">
-            <Link to="/kontakt">Võta ühendust</Link>
-          </Button>
-        </div>
-      </section>
     </>
   );
 };
