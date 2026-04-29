@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone, User } from "lucide-react";
 
-const workers = [
-  { name: "Noorsootöötaja 1", role: "Juhataja", email: "tooline1@setomaanoored.ee", phone: "+372 000 0011" },
-  { name: "Noorsootöötaja 2", role: "Keskus 1", email: "tooline2@setomaanoored.ee", phone: "+372 000 0012" },
-  { name: "Noorsootöötaja 3", role: "Keskus 2", email: "tooline3@setomaanoored.ee", phone: "+372 000 0013" },
-  { name: "Noorsootöötaja 4", role: "Keskus 3", email: "tooline4@setomaanoored.ee", phone: "+372 000 0014" },
-  { name: "Noorsootöötaja 5", role: "Keskus 4", email: "tooline5@setomaanoored.ee", phone: "+372 000 0015" },
+const workers: { name: string; role: string; email: string; phone?: string }[] = [
+  { name: "Karoliine Marinitševa", role: "Juhataja", email: "noorsootoo.keskus@setomaa.ee", phone: "+372 5171796" },
+  { name: "Triinu Kotov", role: "Värska piirkonna noorsootöötaja", email: "triinu.kotov@setomaakoolid.ee" },
+  { name: "Birjo Piir", role: "Meremäe piirkonna noorsootöötaja", email: "birjo.piir@setomaakoolid.ee" },
+  { name: "Jade Lummo", role: "Mikitamäe piirkonna noorsootöötaja", email: "jade.lummo@setomaakoolid.ee" },
+  { name: "Siim Alve", role: "Värska piirkonna noorsootöötaja", email: "siim.alve@gmail.com" },
+  { name: "Kenert Tuik", role: "Värska piirkonna noorsootöötaja", email: "email@example.org" },
 ];
 
 const Contact = () => {
@@ -87,10 +88,12 @@ const Contact = () => {
                   <Mail className="h-4 w-4 text-primary" />
                   <a href={`mailto:${w.email}`} className="break-all hover:text-primary">{w.email}</a>
                 </li>
-                <li className="flex items-center justify-center gap-2">
-                  <Phone className="h-4 w-4 text-primary" />
-                  <a href={`tel:${w.phone.replace(/\s/g, "")}`} className="hover:text-primary">{w.phone}</a>
-                </li>
+                {w.phone && (
+                  <li className="flex items-center justify-center gap-2">
+                    <Phone className="h-4 w-4 text-primary" />
+                    <a href={`tel:${w.phone.replace(/\s/g, "")}`} className="hover:text-primary">{w.phone}</a>
+                  </li>
+                )}
               </ul>
             </article>
           ))}
