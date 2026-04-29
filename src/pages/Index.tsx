@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Facebook, Heart, MapPin, Music, Palette, Users } from "lucide-react";
+import { ArrowRight, Facebook, Heart, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/hero.jpg";
-
-const highlights = [
-  { icon: Music, title: "Tegevused", text: "Töötoad, mängud, sport ja palju muud iga nädal." },
-  { icon: Heart, title: "Üritused", text: "Laagrid, festivalid ja ühised väljasõidud üle Setomaa." },
-  { icon: Users, title: "Kogukond", text: "Sõbralik koht, kus iga noor on oodatud ja kuuldud." },
-  { icon: Palette, title: "Loovus", text: "Kunst, muusika, käsitöö ja kõik vahepealne." },
-];
 
 const centresPreview = [
   { name: "Värska noortekeskus", place: "Värska" },
@@ -90,20 +83,6 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {highlights.map(({ icon: Icon, title, text }) => (
-            <div
-              key={title}
-              className="group rounded-3xl border border-border/60 bg-card p-6 shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-pop)]"
-            >
-              <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
-                <Icon className="h-6 w-6" />
-              </div>
-              <h3 className="mt-5 font-display text-xl font-bold">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{text}</p>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* Centres teaser */}
