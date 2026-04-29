@@ -36,9 +36,9 @@ const Footer = () => {
         <div>
           <h3 className="font-display text-base font-bold">Võta ühendust</h3>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> Setomaa vald, Eesti</li>
-            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> info@setomaanoored.ee</li>
-            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-primary" /> +372 000 0000</li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Pikk tn 30, Värska alevik, Setomaa vald, 64001</li>
+            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <a href="mailto:noorsootoo.keskus@setomaa.ee" className="break-all hover:text-primary">noorsootoo.keskus@setomaa.ee</a></li>
+            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <a href="tel:+3725171796" className="hover:text-primary">+372 5171796</a></li>
             <li className="flex items-start gap-2"><Facebook className="mt-0.5 h-4 w-4 text-primary" /> Leia meid Facebookis</li>
           </ul>
         </div>
