@@ -1,0 +1,49 @@
+import { Link } from "react-router-dom";
+import { Facebook, Mail, MapPin, Phone, Sparkles } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="mt-24 border-t border-border/60 bg-muted/40">
+      <div className="container grid gap-10 py-14 md:grid-cols-3">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="grid h-9 w-9 place-items-center rounded-xl bg-[image:var(--gradient-primary)] text-primary-foreground">
+              <Sparkles className="h-5 w-5" />
+            </span>
+            <span className="font-display text-lg font-bold">Setomaa Noorsootöö Keskus</span>
+          </div>
+          <p className="mt-4 max-w-sm text-sm text-muted-foreground">
+            Neli noortekeskust üle Setomaa — üks suur kogukond. Tule tegutsema, looma ja sõpru leidma!
+          </p>
+        </div>
+
+        <div>
+          <h3 className="font-display text-base font-bold">Lehed</h3>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li><Link to="/" className="text-muted-foreground hover:text-primary">Avaleht</Link></li>
+            <li><Link to="/keskused" className="text-muted-foreground hover:text-primary">Keskused</Link></li>
+            <li><Link to="/sotsiaalmeedia" className="text-muted-foreground hover:text-primary">Sotsiaalmeedia</Link></li>
+            <li><Link to="/kontakt" className="text-muted-foreground hover:text-primary">Kontakt</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-display text-base font-bold">Võta ühendust</h3>
+          <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> Setomaa vald, Eesti</li>
+            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> info@setomaanoored.ee</li>
+            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-primary" /> +372 000 0000</li>
+            <li className="flex items-start gap-2"><Facebook className="mt-0.5 h-4 w-4 text-primary" /> Leia meid Facebookis</li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-border/60">
+        <div className="container py-5 text-center text-xs text-muted-foreground">
+          © {new Date().getFullYear()} Setomaa Noorsootöö Keskus. Kõik õigused kaitstud.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
