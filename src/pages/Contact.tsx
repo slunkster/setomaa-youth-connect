@@ -3,10 +3,10 @@ import { Mail, MapPin, Phone, User } from "lucide-react";
 
 const workers: { name: string; role: string; email: string; phone?: string }[] = [
   { name: "Karoliine Marinitševa", role: "Juhataja", email: "noorsootoo.keskus@setomaa.ee", phone: "+372 5171796" },
-  { name: "Triinu Kotov", role: "Värska piirkonna noorsootöötaja", email: "triinu.kotov@setomaakoolid.ee" },
   { name: "Birjo Piir", role: "Meremäe piirkonna noorsootöötaja", email: "birjo.piir@setomaakoolid.ee" },
   { name: "Jade Lummo", role: "Mikitamäe piirkonna noorsootöötaja", email: "jade.lummo@setomaakoolid.ee" },
   { name: "Siim Alve", role: "Värska piirkonna noorsootöötaja", email: "siim.alve@gmail.com" },
+  { name: "Triinu Kotov", role: "Värska piirkonna noorsootöötaja", email: "triinu.kotov@setomaakoolid.ee" },
   { name: "Kenert Tuik", role: "Värska piirkonna noorsootöötaja", email: "email@example.org" },
 ];
 
