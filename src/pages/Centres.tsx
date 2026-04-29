@@ -1,40 +1,41 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import varska from "../assets/varska.jpg";
+import mikitamae from "../assets/mikitamae.jpg";
+import meremae from "../assets/meremae.jpg";
+import obinitsa from "../assets/obinitsa.jpg";
+import skate from "../assets/skate.jpg";
+import placeholder from "../assets/hero1.jpg";
 
 const centres = [
   {
     name: "Värska noortekeskus",
-    address: "Värska, Setomaa vald",
-    hours: "E–R 14:00–20:00",
-    phone: "+372 5171796",
-    email: "noorsootoo.keskus@setomaa.ee",
+    image: varska,
+    address: "Pikk tn 30, Värska, Setomaa vald",
+    hours: "Jälgi nädalakavast!",
   },
   {
     name: "Mikitamäe noortekeskus",
-    address: "Mikitamäe, Setomaa vald",
-    hours: "E–R 14:00–20:00",
-    phone: "+372 5171796",
-    email: "noorsootoo.keskus@setomaa.ee",
+    image: placeholder,
+    address: "Mäe tn 27, Mikitamäe, Setomaa vald",
+    hours: "Jälgi nädalakavast!",
   },
   {
     name: "Meremäe noortekeskus",
-    address: "Meremäe, Setomaa vald",
-    hours: "E–R 14:00–20:00",
-    phone: "+372 5171796",
-    email: "noorsootoo.keskus@setomaa.ee",
+    image: placeholder,
+    address: "Petseri tee 13, Meremäe küla, Setomaa vald",
+    hours: "Jälgi nädalakavast!",
   },
   {
     name: "Obinitsa noortetuba",
-    address: "Obinitsa, Setomaa vald",
-    hours: "Vastavalt kokkuleppele",
-    phone: "+372 5171796",
-    email: "noorsootoo.keskus@setomaa.ee",
+    image: placeholder,
+    address: "Kooli tn 1, Obinitsa, Setomaa vald",
+    hours: "Jälgi nädalakavast!",
   },
   {
     name: "Värska ekstreempark",
-    address: "Värska, Setomaa vald",
-    hours: "Hooajaliselt avatud",
-    phone: "+372 5171796",
-    email: "noorsootoo.keskus@setomaa.ee",
+    image: skate,
+    address: "Vaikuse tn 7, Värska, Setomaa vald",
+    hours: "Võta ühendust, et kokku leppida!",
   },
 ];
 
@@ -52,20 +53,26 @@ const Centres = () => {
             <p className="mt-5 text-lg text-muted-foreground">
               Setomaa Noorsootöö Keskuse koosseisu kuuluvad Värska, Mikitamäe ja
               Meremäe noortekeskused, Obinitsa noortetuba ning Värska ekstreempark.
-              Vali endale lähim ja tule külla — uksed on avatud!
+              Vali endale lähim ja tule külla! Uksed on avatud!
             </p>
           </div>
         </div>
       </section>
 
       <section className="container pb-20">
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="flex flex-wrap justify-center gap-6">
           {centres.map((c) => (
             <article
               key={c.name}
-              className="overflow-hidden rounded-3xl border border-border/60 bg-card shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-pop)]"
+              className="basis-full sm:basis-[calc(50%-0.75rem)] lg:basis-[calc(33.333%-1rem)] overflow-hidden rounded-3xl border border-border/60 bg-card shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-pop)]"
             >
-              <div className="aspect-[16/9] bg-[image:var(--gradient-primary)] opacity-90" />
+              <div className="aspect-[16/9] overflow-hidden">
+                <img
+                  src={c.image}
+                  alt={c.name}
+                  className="h-full w-full object-cover transition duration-500 ease-out hover:scale-105"
+                />
+              </div>
               <div className="p-6 md:p-8">
                 <h2 className="font-display text-2xl font-bold">{c.name}</h2>
                 <ul className="mt-5 space-y-3 text-sm">
@@ -76,14 +83,6 @@ const Centres = () => {
                   <li className="flex items-start gap-3">
                     <Clock className="mt-0.5 h-4 w-4 text-primary" />
                     <span>{c.hours}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Phone className="mt-0.5 h-4 w-4 text-primary" />
-                    <a href={`tel:${c.phone.replace(/\s/g, "")}`} className="hover:text-primary">{c.phone}</a>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Mail className="mt-0.5 h-4 w-4 text-primary" />
-                    <a href={`mailto:${c.email}`} className="break-all hover:text-primary">{c.email}</a>
                   </li>
                 </ul>
               </div>

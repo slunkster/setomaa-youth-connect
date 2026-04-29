@@ -1,25 +1,26 @@
 import { ExternalLink, Facebook } from "lucide-react";
 
 const pages = [
+
   {
-    name: "Setomaa Noorsootöö Keskus",
-    description: "Peamine leht — uudised kõigist keskustest.",
-    url: "https://www.facebook.com/profile.php?id=100064816053638",
-  },
-  {
-    name: "Noortekeskus",
-    description: "Sündmused ja pildid keskusest.",
+    name: "Värska ANK",
+    description: "Värska noortekeskuse sündmused ja pildid.",
     url: "https://www.facebook.com/profile.php?id=100064730153291",
   },
   {
     name: "Miksu Noor",
-    description: "Sündmused ja pildid Miksu noortekeskusest.",
+    description: "Mikitamäe noortekeskuse sündmused ja pildid.",
     url: "https://www.facebook.com/MiksuNoor",
   },
   {
     name: "Noortekeskus",
-    description: "Sündmused ja pildid keskusest.",
+    description: "Meremäe noortekeskuse sündmused ja pildid.",
     url: "https://www.facebook.com/profile.php?id=100092628846509",
+  },
+  {
+    name: "Setomaa Noorsootöö",
+    description: "Vallaühine leht noorsootöö teemadel.",
+    url: "https://www.facebook.com/profile.php?id=100064816053638",
   },
 ];
 
@@ -40,8 +41,7 @@ const Social = () => {
             </span>
             <h1 className="mt-5 font-display text-4xl font-bold sm:text-5xl">Jälgi meid Facebookis</h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Meie kogukond elab ka Facebookis. Vaata uudiseid ja sündmusi peamisel
-              lehel ning igas keskuses eraldi.
+              Jälgi meie tegevusi Facebookis!
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Social = () => {
               <div className="mt-5 overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
                 <iframe
                   src={buildEmbed(p.url)}
-                  width="500"
+                  width="700"
                   height="600"
                   loading="lazy"
                   title={p.name}

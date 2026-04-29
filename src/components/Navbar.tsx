@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 
 const links = [
   { to: "/", label: "Avaleht", end: true },

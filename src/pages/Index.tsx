@@ -2,13 +2,19 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Facebook, Heart, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/hero.jpg";
+import varska from "../assets/varska.jpg";
+import mikitamae from "../assets/mikitamae.jpg";
+import meremae from "../assets/meremae.jpg";
+import obinitsa from "../assets/obinitsa.jpg";
+import skate from "../assets/skate.jpg";
+import placeholder from "../assets/hero1.jpg";
 
 const centresPreview = [
-  { name: "Värska noortekeskus", place: "Värska" },
-  { name: "Mikitamäe noortekeskus", place: "Mikitamäe" },
-  { name: "Meremäe noortekeskus", place: "Meremäe" },
-  { name: "Obinitsa noortetuba", place: "Obinitsa" },
-  { name: "Värska ekstreempark", place: "Värska" },
+  { name: "Värska noortekeskus", place: "Värska", image: varska },
+  { name: "Mikitamäe noortekeskus", place: "Mikitamäe", image: placeholder },
+  { name: "Meremäe noortekeskus", place: "Meremäe", image: placeholder },
+  { name: "Obinitsa noortetuba", place: "Obinitsa", image: placeholder },
+  { name: "Värska ekstreempark", place: "Värska", image: skate },
 ];
 
 const Index = () => {
@@ -34,7 +40,7 @@ const Index = () => {
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
               Värska, Mikitamäe ja Meremäe noortekeskused, Obinitsa noortetuba ja
-              Värska ekstreempark — üks suur kogukond Setomaa noortele 7–26 aastat.
+              Värska ekstreempark — üks suur kogukond Setomaa noortele 7-26 aastat.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-full">
@@ -64,7 +70,7 @@ const Index = () => {
       {/* Intro */}
       <section className="container py-16 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">Noorsootöö Keskus</h2>
+          <h2 className="font-display text-3xl font-bold sm:text-4xl">Setomaa Noorsootöö Keskus</h2>
           <div className="mt-5 space-y-5 text-left text-base text-muted-foreground sm:text-lg">
             <p>
               Setomaa Noorsootöö Keskus korraldab Setomaa vallas noorte huvitegevust.
@@ -98,7 +104,7 @@ const Index = () => {
             </div>
             <Button asChild variant="ghost" className="rounded-full">
               <Link to="/keskused">
-                Vaata kõiki keskusi <ArrowRight className="ml-1 h-4 w-4" />
+                Vaata lähemalt <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -110,7 +116,13 @@ const Index = () => {
                 to="/keskused"
                 className="group block overflow-hidden rounded-3xl border border-border/60 bg-card shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-pop)]"
               >
-                <div className="aspect-[4/3] bg-[image:var(--gradient-primary)] opacity-90" />
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={c.image}
+                    alt={c.name}
+                    className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105"
+                  />
+                </div>
                 <div className="p-5">
                   <h3 className="font-display text-lg font-bold">{c.name}</h3>
                   <p className="mt-1 flex items-center gap-1 text-sm text-muted-foreground">

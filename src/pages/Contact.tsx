@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone, User } from "lucide-react";
+import tootaja from "../assets/tootaja.jpg";
 
-const workers: { name: string; role: string; email: string; phone?: string }[] = [
-  { name: "Karoliine Marinitševa", role: "Juhataja", email: "noorsootoo.keskus@setomaa.ee", phone: "+372 5171796" },
-  { name: "Birjo Piir", role: "Meremäe piirkonna noorsootöötaja", email: "birjo.piir@setomaakoolid.ee" },
-  { name: "Jade Lummo", role: "Mikitamäe piirkonna noorsootöötaja", email: "jade.lummo@setomaakoolid.ee" },
-  { name: "Triinu Kotov", role: "Värska piirkonna noorsootöötaja", email: "triinu.kotov@setomaakoolid.ee" },
+const workers: { name: string; role: string; email: string; phone?: string; image: string }[] = [
+  { name: "Karoliine Marinitševa", role: "Juhataja", email: "noorsootoo.keskus@setomaa.ee", phone: "+372 5171796", image: tootaja },
+  { name: "Birjo Piir", role: "Meremäe piirkonna noorsootöötaja", email: "birjo.piir@setomaakoolid.ee", image: tootaja },
+  { name: "Jade Lummo", role: "Mikitamäe piirkonna noorsootöötaja", email: "jade.lummo@setomaakoolid.ee", image: tootaja },
+  { name: "Triinu Kotov", role: "Värska piirkonna noorsootöötaja", email: "triinu.kotov@setomaakoolid.ee", image: tootaja },
 ];
 
 const Contact = () => {
@@ -76,8 +77,12 @@ const Contact = () => {
               key={w.name}
               className="rounded-3xl border border-border/60 bg-card p-6 text-center shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-pop)]"
             >
-              <div className="mx-auto grid h-40 w-40 place-items-center rounded-full bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-pop)] sm:h-48 sm:w-48">
-                <User className="h-20 w-20 sm:h-24 sm:w-24" />
+              <div className="mx-auto h-40 w-40 overflow-hidden rounded-full shadow-[var(--shadow-pop)] sm:h-48 sm:w-48">
+                <img
+                  src={w.image}
+                  alt={w.name}
+                  className="h-full w-full object-cover"
+                />
               </div>
               <h3 className="mt-5 font-display text-lg font-bold">{w.name}</h3>
               <p className="text-sm font-semibold text-primary">{w.role}</p>
