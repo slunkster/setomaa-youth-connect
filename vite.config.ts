@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     hmr: {
       overlay: false,
+      base: '/setomaa-youth-connect/'
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
