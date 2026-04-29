@@ -25,14 +25,9 @@ const Navbar = () => {
             height={44}
             className="h-11 w-11 object-contain"
           />
-          <div className="flex flex-col leading-tight">
-            <span className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-              Setomaa
-            </span>
-            <span className="font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">
-              Noorsootöö Keskus
-            </span>
-          </div>
+          <span className="whitespace-nowrap font-display text-base font-bold tracking-tight text-foreground sm:text-lg">
+            Setomaa Noorsootöö Keskus
+          </span>
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
