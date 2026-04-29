@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Facebook, Mail, MapPin, Phone, Sparkles } from "lucide-react";
+import { Facebook, Mail, MapPin, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,9 +8,14 @@ const Footer = () => {
       <div className="container grid gap-10 py-14 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-[image:var(--gradient-primary)] text-primary-foreground">
-              <Sparkles className="h-5 w-5" />
-            </span>
+            <img
+              src={logo}
+              alt="Setomaa Noorsootöö Keskuse logo"
+              width={40}
+              height={40}
+              loading="lazy"
+              className="h-10 w-10 object-contain"
+            />
             <span className="font-display text-lg font-bold">Setomaa Noorsootöö Keskus</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
