@@ -3,23 +3,23 @@ import { ExternalLink, Facebook } from "lucide-react";
 const pages = [
   {
     name: "Setomaa Noorsootöö Keskus",
-    description: "Peamine leht — uudised kõigist neljast keskusest.",
-    url: "https://www.facebook.com/setomaanoored",
+    description: "Peamine leht — uudised kõigist keskustest.",
+    url: "https://www.facebook.com/profile.php?id=100064816053638",
   },
   {
-    name: "Keskus 1 Facebookis",
-    description: "Sündmused ja pildid esimesest keskusest.",
-    url: "https://www.facebook.com/setomaanoored",
+    name: "Noortekeskus",
+    description: "Sündmused ja pildid keskusest.",
+    url: "https://www.facebook.com/profile.php?id=100064730153291",
   },
   {
-    name: "Keskus 2 Facebookis",
-    description: "Sündmused ja pildid teisest keskusest.",
-    url: "https://www.facebook.com/setomaanoored",
+    name: "Miksu Noor",
+    description: "Sündmused ja pildid Miksu noortekeskusest.",
+    url: "https://www.facebook.com/MiksuNoor",
   },
   {
-    name: "Keskus 3 Facebookis",
-    description: "Sündmused ja pildid kolmandast keskusest.",
-    url: "https://www.facebook.com/setomaanoored",
+    name: "Noortekeskus",
+    description: "Sündmused ja pildid keskusest.",
+    url: "https://www.facebook.com/profile.php?id=100092628846509",
   },
 ];
 

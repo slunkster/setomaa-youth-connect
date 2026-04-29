@@ -14,7 +14,6 @@ const centresPreview = [
   { name: "Keskus 1", place: "Asukoht 1" },
   { name: "Keskus 2", place: "Asukoht 2" },
   { name: "Keskus 3", place: "Asukoht 3" },
-  { name: "Keskus 4", place: "Asukoht 4" },
 ];
 
 const Index = () => {
@@ -39,7 +38,7 @@ const Index = () => {
               Keskus
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Neli noortekeskust, üks suur kogukond. Tule mängima, õppima, looma ja
+              Kolm noortekeskust, üks suur kogukond. Tule mängima, õppima, looma ja
               uusi sõpru leidma — sina otsustad, mis täna juhtub!
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -72,9 +71,9 @@ const Index = () => {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Mis me oleme?</h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            Setomaa Noorsootöö Keskus on koht, kus iga noor leiab tegevust, sõpru ja
-            võimaluse olla tema ise. Pakume turvalist, värvilist ja loovat
-            keskkonda neljas keskuses üle Setomaa.
+              Setomaa Noorsootöö Keskus on koht, kus iga noor leiab tegevust, sõpru ja
+              võimaluse olla tema ise. Pakume turvalist, värvilist ja loovat
+              keskkonda kolmes keskuses üle Setomaa.
           </p>
         </div>
 
@@ -101,7 +100,7 @@ const Index = () => {
             <div>
               <h2 className="font-display text-3xl font-bold sm:text-4xl">Meie keskused</h2>
               <p className="mt-3 max-w-xl text-muted-foreground">
-                Neli sõbralikku noortekeskust üle Setomaa — tule sellesse, mis sulle
+                Kolm sõbralikku noortekeskust üle Setomaa — tule sellesse, mis sulle
                 kõige lähemal on.
               </p>
             </div>
@@ -112,7 +111,7 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {centresPreview.map((c) => (
               <Link
                 key={c.name}

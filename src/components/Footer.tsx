@@ -13,7 +13,7 @@ const Footer = () => {
             <span className="font-display text-lg font-bold">Setomaa Noorsootöö Keskus</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Neli noortekeskust üle Setomaa — üks suur kogukond. Tule tegutsema, looma ja sõpru leidma!
+            Kolm noortekeskust üle Setomaa — üks suur kogukond. Tule tegutsema, looma ja sõpru leidma!
           </p>
         </div>
 
