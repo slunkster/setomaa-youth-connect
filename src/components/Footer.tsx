@@ -19,7 +19,7 @@ const Footer = () => {
             <span className="font-display text-lg font-bold">Setomaa Noorsootöö Keskus</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Kolm noortekeskust üle Setomaa — üks suur kogukond. Tule tegutsema, looma ja sõpru leidma!
+            Värska, Mikitamäe ja Meremäe noortekeskused, Obinitsa noortetuba ja Värska ekstreempark — üks asutus, üks kogukond.
           </p>
         </div>
 

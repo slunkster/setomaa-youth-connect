@@ -2,25 +2,39 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 const centres = [
   {
-    name: "Keskus 1",
-    address: "Aadress 1, Setomaa",
+    name: "Värska noortekeskus",
+    address: "Värska, Setomaa vald",
     hours: "E–R 14:00–20:00",
-    phone: "+372 000 0001",
-    email: "keskus1@setomaanoored.ee",
+    phone: "+372 5171796",
+    email: "noorsootoo.keskus@setomaa.ee",
   },
   {
-    name: "Keskus 2",
-    address: "Aadress 2, Setomaa",
+    name: "Mikitamäe noortekeskus",
+    address: "Mikitamäe, Setomaa vald",
     hours: "E–R 14:00–20:00",
-    phone: "+372 000 0002",
-    email: "keskus2@setomaanoored.ee",
+    phone: "+372 5171796",
+    email: "noorsootoo.keskus@setomaa.ee",
   },
   {
-    name: "Keskus 3",
-    address: "Aadress 3, Setomaa",
+    name: "Meremäe noortekeskus",
+    address: "Meremäe, Setomaa vald",
     hours: "E–R 14:00–20:00",
-    phone: "+372 000 0003",
-    email: "keskus3@setomaanoored.ee",
+    phone: "+372 5171796",
+    email: "noorsootoo.keskus@setomaa.ee",
+  },
+  {
+    name: "Obinitsa noortetuba",
+    address: "Obinitsa, Setomaa vald",
+    hours: "Vastavalt kokkuleppele",
+    phone: "+372 5171796",
+    email: "noorsootoo.keskus@setomaa.ee",
+  },
+  {
+    name: "Värska ekstreempark",
+    address: "Värska, Setomaa vald",
+    hours: "Hooajaliselt avatud",
+    phone: "+372 5171796",
+    email: "noorsootoo.keskus@setomaa.ee",
   },
 ];
 
@@ -32,12 +46,13 @@ const Centres = () => {
         <div className="container py-16 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-card px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary shadow-[var(--shadow-soft)]">
-              <MapPin className="h-3.5 w-3.5" /> Neli kohta, üks kogukond
+              <MapPin className="h-3.5 w-3.5" /> Viis kohta, üks kogukond
             </span>
             <h1 className="mt-5 font-display text-4xl font-bold sm:text-5xl">Meie keskused</h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Setomaa Noorsootöö Keskusel on kolm asukohta. Vali endale lähim ja
-              tule külla — uksed on alati avatud!
+              Setomaa Noorsootöö Keskuse koosseisu kuuluvad Värska, Mikitamäe ja
+              Meremäe noortekeskused, Obinitsa noortetuba ning Värska ekstreempark.
+              Vali endale lähim ja tule külla — uksed on avatud!
             </p>
           </div>
         </div>
