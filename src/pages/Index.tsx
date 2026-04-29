@@ -11,9 +11,11 @@ const highlights = [
 ];
 
 const centresPreview = [
-  { name: "Keskus 1", place: "Asukoht 1" },
-  { name: "Keskus 2", place: "Asukoht 2" },
-  { name: "Keskus 3", place: "Asukoht 3" },
+  { name: "Värska noortekeskus", place: "Värska" },
+  { name: "Mikitamäe noortekeskus", place: "Mikitamäe" },
+  { name: "Meremäe noortekeskus", place: "Meremäe" },
+  { name: "Obinitsa noortetuba", place: "Obinitsa" },
+  { name: "Värska ekstreempark", place: "Värska" },
 ];
 
 const Index = () => {
@@ -38,8 +40,8 @@ const Index = () => {
               Keskus
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Kolm noortekeskust, üks suur kogukond. Tule mängima, õppima, looma ja
-              uusi sõpru leidma — sina otsustad, mis täna juhtub!
+              Värska, Mikitamäe ja Meremäe noortekeskused, Obinitsa noortetuba ja
+              Värska ekstreempark — üks suur kogukond Setomaa noortele 7–26 aastat.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-full">
@@ -69,12 +71,23 @@ const Index = () => {
       {/* Intro */}
       <section className="container py-16 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">Mis me oleme?</h2>
-          <p className="mt-5 text-lg text-muted-foreground">
-              Setomaa Noorsootöö Keskus on koht, kus iga noor leiab tegevust, sõpru ja
-              võimaluse olla tema ise. Pakume turvalist, värvilist ja loovat
-              keskkonda kolmes keskuses üle Setomaa.
-          </p>
+          <h2 className="font-display text-3xl font-bold sm:text-4xl">Noorsootöö Keskus</h2>
+          <div className="mt-5 space-y-5 text-left text-base text-muted-foreground sm:text-lg">
+            <p>
+              Setomaa Noorsootöö Keskus korraldab Setomaa vallas noorte huvitegevust.
+              Värska, Meremäe ja Mikitamäe noortekeskused liideti kokku üheks asutuseks —
+              Setomaa Noorsootöö Keskuseks. Keskuse eesmärk on luua Setomaa valla
+              7–26-aastastele noortele tingimused, keskkond ja võimalused
+              mitteformaalseks õppeks, vaba aja sisustamiseks ning huvitegevusega
+              tegelemiseks, ning korraldada noorsootööd valla üldhariduskoolides.
+            </p>
+            <p>
+              Meie keskused tegutsevad <span className="font-semibold text-foreground">avatud noorsootöö</span>{" "}
+              meetodil — noortelt noortele põhimõttel või koos noortega. Noorsootöötaja
+              on mentor, kes loob positiivse keskkonna, kus noor tunneb, et on juba
+              täna kogukonna jaoks oluline.
+            </p>
+          </div>
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -100,8 +113,8 @@ const Index = () => {
             <div>
               <h2 className="font-display text-3xl font-bold sm:text-4xl">Meie keskused</h2>
               <p className="mt-3 max-w-xl text-muted-foreground">
-                Kolm sõbralikku noortekeskust üle Setomaa — tule sellesse, mis sulle
-                kõige lähemal on.
+                Värska, Mikitamäe ja Meremäe noortekeskused, Obinitsa noortetuba ning
+                Värska ekstreempark — vali endale lähim ja tule külla.
               </p>
             </div>
             <Button asChild variant="ghost" className="rounded-full">
@@ -111,7 +124,7 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {centresPreview.map((c) => (
               <Link
                 key={c.name}
