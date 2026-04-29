@@ -22,13 +22,6 @@ const centres = [
     phone: "+372 000 0003",
     email: "keskus3@setomaanoored.ee",
   },
-  {
-    name: "Keskus 4",
-    address: "Aadress 4, Setomaa",
-    hours: "E–R 14:00–20:00",
-    phone: "+372 000 0004",
-    email: "keskus4@setomaanoored.ee",
-  },
 ];
 
 const Centres = () => {
@@ -43,7 +36,7 @@ const Centres = () => {
             </span>
             <h1 className="mt-5 font-display text-4xl font-bold sm:text-5xl">Meie keskused</h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Setomaa Noorsootöö Keskusel on neli asukohta. Vali endale lähim ja
+              Setomaa Noorsootöö Keskusel on kolm asukohta. Vali endale lähim ja
               tule külla — uksed on alati avatud!
             </p>
           </div>
